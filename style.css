@@ -1,0 +1,40 @@
+/* #region common*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --drop-jumbo: #0061FF;
+    --drop-button: #0F70FF;
+    --drop-check: #B4D0E7;
+}
+/* #endregion common*/
+/* #region header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.start, .end{
+    margin-top: 1rem;
+}
+.start a, .end a{
+    padding: 1.2rem;
+    vertical-align: top;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+header img{
+    padding-left: 0.5rem;
+}
+header button{
+    background-color: var(--drop-button);
+    color: white;
+    border: none;
+    padding: 0.35rem 0.8rem;
+    margin-right: 1rem;
+}
+/* #endregion header */
+
