@@ -5,9 +5,11 @@
     box-sizing: border-box;
 }
 :root{
-    --drop-check: #0061FF;
-    --drop-button: #0F70FF;
+    --drop-button: #0061FF;
+    --drop-check: #0F70FF;
     --drop-jumbo: #B4D0E7;
+    --drop-border: #DBDBDD;
+
 }
 /* #endregion common*/
 /* #region header */
@@ -20,6 +22,7 @@ header{
     background-color: white;
     width: 100%;
     padding-bottom: 1rem;
+    border-bottom: 1px solid grey;
 }
 .start, .end{
     margin-top: 1rem;
@@ -34,37 +37,48 @@ header{
 header img{
     padding-left: 0.5rem;
 }
- button{
+button{
     background-color: var(--drop-button);
     color: white;
     border: none;
     padding: 0.35rem 0.8rem;
+}
+header button{
     margin-right: 1rem;
 }
 /* #endregion header */
+/* #region jumbo */
 .bg{
     background-color: var(--drop-jumbo);
 }
-.container{
-    width: 45%;
+.bg .container{
+    width: 60%;
     margin: auto;
     padding-top: 5rem;
 }
 h1{
-    font-size: 48px;
+    font-size: 68px;
     margin-bottom: 2rem;
 }
 .row{
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    align-items: flex-start;
+}
+.col_4{
+    width: calc((100% / 12)* 4);
+    border: 1px solid var(--drop-border);
 }
 .col_5{
     width: calc((100% / 12)* 5);
 }
 .col_7{
     width: calc((100% / 12)* 7);
+}
+.col_12{
+    width: calc((100% / 12)* 12);
+    border: 1px solid var(--drop-border);
+    margin-top: 3rem;
 }
 
 .col_7 img{
@@ -73,10 +87,84 @@ h1{
     bottom: -70px;
 } 
 .col_5 p, .annulla{
-    padding: 1.8rem 0;
+    padding: 2rem 0;
 }
 .freccia{
     padding-top: 2rem;
     padding-bottom: 0.5rem;
     font-size: 2rem;
 }
+/* #endregion jumbo */
+/* #region business */
+.business{
+    width: 55%;
+    margin: auto;
+}
+.business h2{
+    margin-top: 7rem;
+}
+.business span{
+    margin: 3rem 1rem 3rem 0;
+    display: inline-block;
+}
+/* card */
+.card{
+    display: flex;
+    gap: 2rem;
+}
+.col_4 .pack, .col_12 .pack{
+    text-align: center;
+    padding: 0.25rem 1rem;
+    border-bottom: 1px solid var(--drop-border);
+}
+.business .container{
+    margin: auto;
+    width: 85%;
+}
+h3{
+    padding: 30px 0;
+}
+hr{
+    width: 50px;
+    margin: 2rem 0;
+}
+.cost{
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+}
+.month{
+    color: grey;
+    padding-bottom: 2rem
+}
+.user{
+    padding-bottom: 1rem;
+}
+.user .fa-solid{
+    padding-right: 0.5rem;
+}
+.container button{
+    margin:1rem 0;
+}
+h4{
+    padding-bottom: 0.8rem;
+}
+.highlights{
+    padding: 0.5rem 0;
+    display: flex;
+}
+.highlights div{
+    width: calc((100% / 12 )*11);
+
+}
+.fa-check{
+    color: var(--drop-check);
+    margin-right: 0.5rem;
+    width: calc((100% / 12 )*1);
+}
+.col_12 .container{
+    display: flex;
+}
+
+
+/* #endregion business */
+
