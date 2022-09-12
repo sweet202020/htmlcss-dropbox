@@ -5,9 +5,9 @@
     box-sizing: border-box;
 }
 :root{
-    --drop-jumbo: #0061FF;
+    --drop-check: #0061FF;
     --drop-button: #0F70FF;
-    --drop-check: #B4D0E7;
+    --drop-jumbo: #B4D0E7;
 }
 /* #endregion common*/
 /* #region header */
@@ -16,12 +16,16 @@ header{
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    z-index: 100000;
+    background-color: white;
+    width: 100%;
+    padding-bottom: 1rem;
 }
 .start, .end{
     margin-top: 1rem;
 }
 .start a, .end a{
-    padding: 1.2rem;
+    margin: 1.2rem;
     vertical-align: top;
     text-decoration: none;
     color: black;
@@ -30,7 +34,7 @@ header{
 header img{
     padding-left: 0.5rem;
 }
-header button{
+ button{
     background-color: var(--drop-button);
     color: white;
     border: none;
@@ -38,14 +42,23 @@ header button{
     margin-right: 1rem;
 }
 /* #endregion header */
+.bg{
+    background-color: var(--drop-jumbo);
+}
 .container{
-    width: 85%;
+    width: 45%;
     margin: auto;
-    background-color: var(--drop-check);
-    padding-top: 10rem;
+    padding-top: 5rem;
+}
+h1{
+    font-size: 48px;
+    margin-bottom: 2rem;
 }
 .row{
     display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: flex-start;
 }
 .col_5{
     width: calc((100% / 12)* 5);
@@ -53,6 +66,17 @@ header button{
 .col_7{
     width: calc((100% / 12)* 7);
 }
+
 .col_7 img{
     width: 700px;
+    position: absolute;
+    bottom: -70px;
 } 
+.col_5 p, .annulla{
+    padding: 1.8rem 0;
+}
+.freccia{
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+}
