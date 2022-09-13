@@ -9,6 +9,11 @@
     --drop-check: #0F70FF;
     --drop-jumbo: #B4D0E7;
     --drop-border: #DBDBDD;
+    --drop-florida: #0093CE;
+    --drop-asu: #61082B;
+    --drop-designit_first: #A2D39B;
+    --drop-topps: #FF1C1C;
+
 
 }
 /* #endregion common*/
@@ -32,7 +37,6 @@ header{
     vertical-align: top;
     text-decoration: none;
     color: black;
-    font-size: 1.2rem;
 }
 header img{
     padding-left: 0.5rem;
@@ -44,7 +48,7 @@ button{
     padding: 0.35rem 0.8rem;
 }
 header button{
-    margin-right: 1rem;
+    margin: 0 1rem;
 }
 /* #endregion header */
 /* #region jumbo */
@@ -65,9 +69,14 @@ h1{
     flex-wrap: wrap;
     position: relative;
 }
+.col_2{
+    width: calc((100% / 12)* 2);
+}
+.col_3{
+    width: calc((100% / 12)* 3);
+}
 .col_4{
     width: calc((100% / 12)* 4);
-    border: 1px solid var(--drop-border);
 }
 .col_5{
     width: calc((100% / 12)* 5);
@@ -75,19 +84,26 @@ h1{
 .col_7{
     width: calc((100% / 12)* 7);
 }
+.col_6{
+    width: calc((100% / 12)* 6);
+}
+.col_9{
+    width: calc((100% / 12)* 9);
+
+}
 .col_12{
     width: calc((100% / 12)* 12);
     border: 1px solid var(--drop-border);
-    margin-top: 3rem;
+    margin: 3rem 0;
 }
 
-.col_7 img{
+.bg img{
     width: 700px;
     position: absolute;
     bottom: -70px;
 } 
 .col_5 p, .annulla{
-    padding: 2rem 0;
+    padding: 1.5rem 0;
 }
 .freccia{
     padding-top: 2rem;
@@ -96,7 +112,7 @@ h1{
 }
 /* #endregion jumbo */
 /* #region business */
-.business{
+.business, .contact, .operation, .container_h3{
     width: 55%;
     margin: auto;
 }
@@ -117,11 +133,14 @@ h1{
     padding: 0.25rem 1rem;
     border-bottom: 1px solid var(--drop-border);
 }
+.card .col_4{
+    border: 1px solid var(--drop-border);
+}
 .business .container{
     margin: auto;
     width: 85%;
 }
-h3{
+.container h3{
     padding: 30px 0;
 }
 hr{
@@ -163,8 +182,82 @@ h4{
 }
 .col_12 .container{
     display: flex;
+    padding: 1rem;
 }
 
-
 /* #endregion business */
+/* #region contact */
+.contact img{
+    width: 470px;
+}
 
+#partner{
+    background-color: white;
+    color: black;
+    padding: 0.6rem 1rem;
+    border: 1px solid;
+    margin-top: 1rem;
+}
+.contact h3{
+    font-size: 25px;
+}
+/* #endregion contact */
+/* #region operation */
+
+.operation{
+    margin-top: 5rem;
+}
+.operation img{
+    width: 250px;
+}
+.operation .col_4{
+    padding: 2rem;
+}
+.operation p{
+    padding-top: 1rem;
+    font-size: 13px;
+}
+/* #endregion operation */
+.color_block h2{
+    margin: 3rem 0;
+    font-size: 2rem;
+}
+.col_6 a{
+    margin-bottom: 3rem;
+    display: inline-block;
+}
+.col_2 img{
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.designit{
+    background-color: var(--drop-designit_first);
+    width: 250px;
+    height: 250px;
+    position: relative;
+    
+}
+.arizona{
+    background-color: var(--drop-asu);
+    height: 250px;
+    width: 250px;
+    position: relative;
+
+}
+.florida{
+    background-color: var(--drop-florida);
+    height: 250px;
+    width: 250px;
+    position: relative;
+
+}
+.topps{
+    background-color: var(--drop-topps);
+    height: 250px;
+    width: 250px;
+    position: relative;
+
+}
