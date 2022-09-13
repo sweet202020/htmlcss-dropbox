@@ -237,8 +237,7 @@ h4{
 /* #endregion operation */
 /* #region block */
 .container_h3 .col_6{
-    padding-left: 2rem;
-    margin: 7rem 0;
+    margin: 7rem 2rem;
 }
 .col_6 h2{
     margin-bottom: 3rem;
