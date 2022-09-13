@@ -13,6 +13,11 @@
     --drop-asu: #61082B;
     --drop-designit_first: #A2D39B;
     --drop-topps: #FF1C1C;
+    --drop-planet: #0D2481;
+    --drop-bycicle: #D5001F;
+    --drop-designit_second: #F5F5F5;
+    --drop-clear: #FFD830;
+
 
 
 }
@@ -87,6 +92,9 @@ h1{
 .col_6{
     width: calc((100% / 12)* 6);
 }
+.col_8{
+    width: calc((100% / 12)* 8);
+}
 .col_9{
     width: calc((100% / 12)* 9);
 
@@ -112,7 +120,7 @@ h1{
 }
 /* #endregion jumbo */
 /* #region business */
-.business, .contact, .operation, .container_h3{
+.business, .contact, .operation, .container_h3, .prova{
     width: 55%;
     margin: auto;
 }
@@ -218,7 +226,8 @@ h4{
     font-size: 13px;
 }
 /* #endregion operation */
-.color_block h2{
+/* #region block */
+.col_6 h2{
     margin: 3rem 0;
     font-size: 2rem;
 }
@@ -232,32 +241,62 @@ h4{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    filter: invert(10);
+    
+}
+.designit, .arizona, .florida, .topps, .bycicle, .hearst, .lonely, .clear{
+    width: 250px;
+    height: 250px;
+    position: relative;  
 }
 .designit{
     background-color: var(--drop-designit_first);
-    width: 250px;
-    height: 250px;
-    position: relative;
-    
 }
 .arizona{
     background-color: var(--drop-asu);
-    height: 250px;
-    width: 250px;
-    position: relative;
-
 }
 .florida{
     background-color: var(--drop-florida);
-    height: 250px;
-    width: 250px;
-    position: relative;
-
 }
 .topps{
     background-color: var(--drop-topps);
-    height: 250px;
-    width: 250px;
-    position: relative;
-
 }
+.designit_big{
+    background-color: var(--drop-designit_second);
+    flex-grow: 2;
+}
+.designit_big img{
+    width: 200px;
+    margin: 2rem;
+}
+.bycicle{
+    background-color: var(--drop-bycicle);
+}
+.hearst{
+    background-color: var(--drop-jumbo);
+}
+.lonely{
+    background-color: var(--drop-planet);
+}
+.clear{
+    background-color: var(--drop-clear);
+}
+.prova{
+    display: flex;
+}
+.bg h2, #button_prova{
+    padding: 5rem 0;
+}
+.bg h2{
+    font-size: 35px;
+    color: var(--drop-asu);
+    margin-right: 12rem;
+}
+#button_prova{
+    background-color: white;
+    color: black;
+    padding: 0.35rem 2rem;
+    margin-top: 5rem;
+}
+
+/* #endregion block */
