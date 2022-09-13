@@ -111,7 +111,7 @@ h1{
     bottom: -70px;
 } 
 .col_5 p, .annulla{
-    padding: 1.5rem 0;
+    padding: 1.2rem 0;
 }
 .freccia{
     padding-top: 2rem;
@@ -171,6 +171,10 @@ h1{
 }
 .container button{
     margin:1rem 0;
+    padding: 1rem 2rem;
+}
+#call{
+    padding: 1rem 5rem;
 }
 h4{
     padding-bottom: 0.8rem;
@@ -187,6 +191,11 @@ h4{
     color: var(--drop-check);
     margin-right: 0.5rem;
     width: calc((100% / 12 )*1);
+}
+#office{
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    margin-left: 4.8rem;
 }
 .col_12 .container{
     display: flex;
@@ -223,17 +232,17 @@ h4{
 }
 .operation p{
     padding-top: 1rem;
-    font-size: 13px;
+    font-size: 15px;
 }
 /* #endregion operation */
 /* #region block */
-.col_6 h2{
-    margin: 3rem 0;
-    font-size: 2rem;
+.container_h3 .col_6{
+    padding-left: 2rem;
+    margin: 7rem 0;
 }
-.col_6 a{
+.col_6 h2{
     margin-bottom: 3rem;
-    display: inline-block;
+    font-size: 2rem;
 }
 .col_2 img{
     width: 100px;
@@ -248,6 +257,7 @@ h4{
     width: 250px;
     height: 250px;
     position: relative;  
+    flex-grow: 1;
 }
 .designit{
     background-color: var(--drop-designit_first);
@@ -263,7 +273,6 @@ h4{
 }
 .designit_big{
     background-color: var(--drop-designit_second);
-    flex-grow: 2;
 }
 .designit_big img{
     width: 200px;
@@ -319,3 +328,33 @@ h4{
     position: absolute;
     right: 2rem;
 }
+/* #endregion faq */
+/* #region footer */
+footer{
+    margin-top: 5rem;
+    background-color: black;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 4rem 18rem;
+}
+.foot>div{
+    font-size: 13px;
+    line-height: 40px;
+}
+.foot h3{
+    font-size: 20px;
+}
+footer span{
+    display: inline-block;
+    color: white;
+    padding-top: 3rem;
+    margin: 2.5rem 18rem;
+    border-top: 1px solid white;
+}
+footer i{
+    padding: 0 1rem;
+}
+/* #endregion footer */
