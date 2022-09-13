@@ -120,7 +120,7 @@ h1{
 }
 /* #endregion jumbo */
 /* #region business */
-.business, .contact, .operation, .container_h3, .prova{
+.business, .contact, .operation, .container_h3, .prova, .faq{
     width: 55%;
     margin: auto;
 }
@@ -151,7 +151,7 @@ h1{
 .container h3{
     padding: 30px 0;
 }
-hr{
+.container hr{
     width: 50px;
     margin: 2rem 0;
 }
@@ -300,3 +300,22 @@ h4{
 }
 
 /* #endregion block */
+/* #region faq */
+.faq h2{
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    font-size: 37px;
+}
+.faq p{
+    padding: 2rem 0;
+    border-top: 1px solid;
+    position: relative;
+}
+.faq p:last-child{
+    border-bottom: 1px solid;
+}
+.faq i{
+    font-size: 13px;
+    position: absolute;
+    right: 2rem;
+}
