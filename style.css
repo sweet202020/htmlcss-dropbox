@@ -43,6 +43,10 @@ header{
     text-decoration: none;
     color: black;
 }
+header a:hover{
+    padding-bottom: 1.7rem ;
+    border-bottom: 3px solid;
+}
 header img{
     padding-left: 0.5rem;
 }
@@ -51,6 +55,10 @@ button{
     color: white;
     border: none;
     padding: 0.35rem 0.8rem;
+}
+button:hover{
+    opacity: 0.4;
+    cursor: pointer;
 }
 header button{
     margin: 0 1rem;
@@ -128,7 +136,7 @@ h1{
     margin-top: 7rem;
 }
 .business span{
-    margin: 3rem 1rem 3rem 0;
+    margin: 1.5rem 0.5rem;
     display: inline-block;
 }
 /* card */
@@ -305,6 +313,18 @@ h4{
     color: black;
     padding: 0.35rem 2rem;
     margin-top: 5rem;
+    transition: 0.5s;
+}
+#button_prova:hover{
+    color: gray;
+    opacity: 1;
+}
+.designit_big p, cite{
+    padding: 2rem;
+}
+.designit_big hr{
+    width: 60px;
+    margin-left: 40px;
 }
 
 /* #endregion block */
@@ -314,7 +334,7 @@ h4{
     margin-bottom: 3rem;
     font-size: 37px;
 }
-.faq p{
+.faq_display{
     padding: 2rem 0;
     border-top: 1px solid;
     position: relative;
@@ -327,6 +347,20 @@ h4{
     position: absolute;
     right: 2rem;
 }
+.faq_display .fa-angle-up, .faq_hover{
+    display: none;
+}
+.faq_display:hover + .faq_hover{
+    display: inline-block;
+    padding-bottom: 1rem;
+}
+.faq_display:hover .fa-angle-down{
+    display: none;
+}
+.faq_display:hover .fa-angle-up{
+    display: inline-block;
+}
+
 /* #endregion faq */
 /* #region footer */
 footer{
