@@ -130,7 +130,13 @@ h1{
     padding-top: 2rem;
     padding-bottom: 0.5rem;
     font-size: 2rem;
+    background-color: var(--drop-jumbo);
+    color: black;
 }
+p a{
+    background-color: white;
+}
+
 /* #endregion jumbo */
 /* #region business */
 .business, .contact, .operation, .container_h3, .prova, .faq{
