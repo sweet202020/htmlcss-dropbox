@@ -80,7 +80,6 @@ h1{
 .row{
     display: flex;
     flex-wrap: wrap;
-    position: relative;
 }
 .col_2{
     width: calc((100% / 12)* 2);
@@ -115,8 +114,7 @@ h1{
 
 .bg img{
     width: 700px;
-    position: absolute;
-    bottom: -70px;
+    margin-bottom: -25rem;
 } 
 .col_5 p, .annulla{
     padding: 1.2rem 0;
@@ -135,11 +133,55 @@ h1{
 .business h2{
     margin-top: 7rem;
 }
-.business span{
-    margin: 1.5rem 0.5rem;
+/* #region radiobox */
+.radio {
     display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    margin: 1rem;
+    cursor: pointer;
 }
-/* card */
+.radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color:blue;
+    border-radius: 50%;
+}
+.radio:hover input ~ .checkmark {
+    background-color: blue;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.radio input:checked ~ .checkmark:after {
+    display: block;
+}
+.radio .checkmark:after {
+    top: 6px;
+    left: 6px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+}
+.radio .checkmark:before {
+    background-color: blue;
+}
+/* #endregion radiobox */
+/* #region card */
 .card{
     display: flex;
     gap: 2rem;
@@ -209,6 +251,7 @@ h4{
     display: flex;
     padding: 1rem;
 }
+/* #endregion card */
 
 /* #endregion business */
 /* #region contact */
@@ -280,6 +323,9 @@ h4{
 }
 .designit_big{
     background-color: var(--drop-designit_second);
+    width: 250px;
+    height: 500px;
+    flex-grow: 3;
 }
 .designit_big img{
     width: 200px;
