@@ -35,7 +35,7 @@ header{
     border-bottom: 1px solid grey;
 }
 header a{
-    margin-right: 1.2rem;
+    margin:0 2rem;
     text-decoration: none;
     color: black;
 }
@@ -43,25 +43,50 @@ header a{
     display: inline-block;
     padding-top: 1rem;
 }
-.start a:hover + .item{
+.start a:hover + ul{
     display: block;
 }
-.start a:hover{
-    padding-bottom: 1.6rem;
-    border-bottom: 3px solid;
-}
-.end a:hover{
-    padding-bottom: 1.8rem;
-    border-bottom: 3px solid;
+.end a:hover + ul{
+    display: block;
 }
 header img{
     padding-left: 0.5rem;
     padding-right: 1.2rem;
     vertical-align: middle;
 }
-.item{
+ul{
     display: none;
-    margin-left: 11rem;
+    list-style-type: none;
+    position: relative;
+}
+li{
+    position: absolute;
+    background-color: white;
+    border: 1px solid;
+}
+.item_1{ 
+    top: 2rem;
+    width: 100px;
+    text-align: center;
+    left: 2rem;
+}
+.item_2{
+    top: 4rem;
+    width: 100px;
+    left: 2rem;
+    text-align: center;
+}
+.item_3{
+    top: 6rem;
+    width: 100px;
+    left: 2rem;
+    text-align: center;
+}
+.item_4{
+    top: 8rem;
+    width: 100px;
+    left: 2rem;
+    text-align: center;
 }
 main a, .pulsante{
     display: inline-block;
