@@ -21,6 +21,9 @@
 
 
 }
+img{
+    max-width: 100%;
+}
 /* #endregion common*/
 /* #region header */
 header{
@@ -152,8 +155,7 @@ h1{
 }
 
 .bg img{
-    width: 700px;
-    margin-bottom: -25rem;
+    margin-bottom: -24rem;
 } 
 .col_5 p, .annulla{
     padding: 1.2rem 0;
@@ -305,9 +307,6 @@ h4{
 
 /* #endregion business */
 /* #region contact */
-.contact img{
-    width: 470px;
-}
 
 #partner{
     background-color: white;
@@ -325,9 +324,6 @@ h4{
 .operation{
     margin-top: 5rem;
 }
-.operation img{
-    width: 250px;
-}
 .operation .col_4{
     padding: 2rem;
 }
@@ -344,7 +340,7 @@ h4{
     margin-bottom: 3rem;
     font-size: 2rem;
 }
-.col_2 img{
+.col_6 img{
     width: 100px;
     position: absolute;
     top: 50%;
@@ -354,13 +350,13 @@ h4{
     
 }
 .designit, .arizona, .florida, .topps, .bycicle, .hearst, .lonely, .clear{
-    width: 250px;
-    height: 250px;
     position: relative;  
     flex-grow: 1;
+    aspect-ratio: 1/1;
 }
 .designit{
     background-color: var(--drop-designit_first);
+    border: 1px solid black;
 }
 .arizona{
     background-color: var(--drop-asu);
@@ -373,8 +369,6 @@ h4{
 }
 .designit_big{
     background-color: var(--drop-designit_second);
-    width: 250px;
-    height: 500px;
     flex-grow: 3;
 }
 .designit_big img{
