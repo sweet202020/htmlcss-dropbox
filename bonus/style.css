@@ -18,8 +18,9 @@
     --drop-designit_second: #F5F5F5;
     --drop-clear: #FFD830;
 
-
-
+}
+body{
+    font-family: 'Open Sans', sans-serif;
 }
 img{
     max-width: 100%;
@@ -44,52 +45,81 @@ header a{
 }
 .end, .start{
     display: inline-block;
-    padding-top: 1rem;
-}
-.start a:hover + ul{
-    display: block;
-}
-.end a:hover + ul{
-    display: block;
+    position: relative;
+    margin-top: 1rem;
 }
 header img{
     padding-left: 0.5rem;
     padding-right: 1.2rem;
     vertical-align: middle;
 }
-ul{
+.dropbtn{
+    background-color:var(--drop-jumbo);
+    padding: 7px;
+    font-size: 16px;
+    border: none;
+}
+.dropdown_content{
     display: none;
-    list-style-type: none;
-    position: relative;
-}
-li{
     position: absolute;
-    background-color: white;
-    border: 1px solid;
+    background-color: var(--drop-jumbo);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border: 1px solid white;
+    min-width: 100%;
+    margin-left: -0.5rem;
+    margin-top: 0.45rem;
 }
-.item_1{ 
-    top: 2rem;
-    width: 100px;
-    text-align: center;
-    left: 2rem;
-}
-.item_2{
-    top: 4rem;
-    width: 100px;
-    left: 2rem;
-    text-align: center;
-}
-.item_3{
-    top: 6rem;
-    width: 100px;
-    left: 2rem;
+.dropdown_content a{
+    color: black;
+    padding: 1rem 0;
+    text-decoration: none;
+    display: block;
     text-align: center;
 }
-.item_4{
-    top: 8rem;
-    width: 100px;
-    left: 2rem;
-    text-align: center;
+
+.dropdown_content a:hover {
+    background-color: #f1f1f1;
+    text-decoration: underline;
+    transition: 0.5s;
+    animation-name: change_color;
+    animation-duration: 10s;
+}
+.start:hover .dropdown_content,.end:hover .dropdown_content {
+    display: block;
+}
+.start:hover, .end:hover {
+    text-decoration: underline;
+    animation-name: change_color;
+    animation-duration: 10s;
+
+}
+@keyframes change_color{
+    0% {
+        background-color: var(--drop-jumbo);
+    }
+    10%{
+        background-color: rgb(141, 116, 141);
+    } 
+    25%{
+        background-color: var(--drop-clear);
+    }
+    50%{
+        background-color: var(--drop-designit_first);
+    }
+    75%{
+        background-color: white;
+    }
+    100%{
+        background-color: var(--drop-jumbo);
+    }
+}
+.fa-angle-right{
+    font-size: 0.75rem;
+    position: absolute;
+    right: 1rem;
+    padding-top: 0.3rem;
+    
 }
 main a, .pulsante{
     display: inline-block;
@@ -105,6 +135,18 @@ main a:hover, .pulsante:hover{
     cursor: pointer;
 }
 
+.left{
+    position: absolute;
+    display: none;
+    left: 6rem;
+    top: 1rem;
+    border: 1px solid white;
+    background-color: var(--drop-jumbo);
+    min-width: 100%;
+}
+.item_container:hover .left{
+    display: block;
+}
 /* #endregion header */
 /* #region jumbo */
 .bg{
@@ -271,7 +313,7 @@ p a{
     padding: 1rem 2rem;
 }
 #call{
-    padding: 0.35rem 5rem;
+    padding: 0.35rem 4.3rem;
 }
 h4{
     padding-bottom: 0.8rem;
@@ -293,6 +335,7 @@ h4{
     margin-top: 1rem;
     padding: 0.35 2rem;
     margin-left: 6rem;
+    font-size: 14px;
 }
 .col_12 .container{
     display: flex;
@@ -479,5 +522,13 @@ footer span{
 }
 footer i{
     padding: 0 1rem;
+}
+footer div a{
+    text-decoration: none;
+    color: white;
+}
+footer div a:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 /* #endregion footer */

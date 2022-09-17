@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <title>Dropbox</title>
 </head>
 <body>
@@ -13,62 +16,92 @@
         <nav>
 
             <img src="./img/logo-small.png" alt="">
-            <span class="start">
-                <a href="#">Perchè Dropbox</a> 
-                <ul>
-                    <li class="item_1">item</li>
-                    <li class="item_2">item</li>
-                    <li class="item_3">item</li>
-                    <li class="item_4">item</li>
-                </ul>
+            <span class="start dropbtn">
+                <a href="#">Perchè Dropbox</a>
+                <div class= "dropdown_content">
+                    <div class="item_container">
+                        <a href="#" class="plus">item <i class="fa-solid fa-angle-right"></i></a>
+                        <div class="left">
+                            <a href="">item</a>
+                            <a href="">item</a>
+                            <a href="">item</a>
+                        </div>
+                    </div>
+                        <a href="#">item</a>
+                        <a href="#">item</a>
+                </div>
+
             </span>
-            <span class="start">
+            <span class="start dropbtn">
                 <a href="#">Funzioni</a> 
-                <ul>
-                    <li class="item_1">item</li>
-                    <li class="item_2">item</li>
-                    <li class="item_3">item</li>
-                    <li class="item_4">item</li>
-                </ul>
+                <div class="dropdown_content">
+                    <a href="#">item</a>
+                    <a href="#">item</a>
+                    <a href="#">item</a>
+                </div> 
             </span>
-            <span class="start">
+            <span class="start dropbtn">
                 <a href="#">Piani e Prezzi</a> 
-                <ul>
-                    <li class="item_1">item</li>
-                    <li class="item_2">item</li>
-                    <li class="item_3">item</li>
-                    <li class="item_4">item</li>
-                </ul>
+                <div class="dropdown_content">
+                    <div class="item_container">
+                        <a href="#" class="plus">item<i class="fa-solid fa-angle-right"></i></a>
+                        <div class="left">
+                            <a href="">item</a>
+                            <a href="">item</a>
+                            <a href="">item</a>
+                        </div>
+                    </div>
+                    <a href="#">item</a>
+                    <a href="#">item</a>
+                    <div class="item_container">
+                        <a href="#" class="plus">item<i class="fa-solid fa-angle-right"></i></a>
+                        <div class="left">
+                            <a href="">item</a>
+                            <a href="">item</a>
+                            <a href="">item</a>
+                        </div>
+                    </div>
+                </div> 
             </span>
         </nav>
             
             <nav>
-                <span class="end">
+                <span class="end dropbtn">
                     <a href="#">Supporto</a> 
-                    <ul>
-                        <li class="item_1">item</li>
-                        <li class="item_2">item</li>
-                        <li class="item_3">item</li>
-                        <li class="item_4">item</li>
-                    </ul>
+                    <div class="dropdown_content">
+                        <div class="item_container">
+                            <a href="#" class="plus">item<i class="fa-solid fa-angle-right"></i></a>
+                            <div class="left">
+                                <a href="">item</a>
+                                <a href="">item</a>
+                            </div>
+                        </div>
+                        <a href="#">item</a>
+                        <a href="#">item</a>
+                    </div> 
                 </span>
-                <span class="end">
+                <span class="end dropbtn">
                     <a href="#">Contatta l'ufficio vendite</a> 
-                    <ul>
-                        <li class="item_1">item</li>
-                        <li class="item_2">item</li>
-                        <li class="item_3">item</li>
-                        <li class="item_4">item</li>
-                    </ul>
+                    <div class="dropdown_content">
+                        <a href="#">item</a>
+                        <a href="#">item</a>
+                        <a href="#">item</a>
+                    </div> 
                 </span>
-                    <span class="end">
+                <span class="end dropbtn">
                         <a href="#">Accedi</a> 
-                        <ul>
-                            <li class="item_1">item</li>
-                            <li class="item_2">item</li>
-                            <li class="item_3">item</li>
-                            <li class="item_4">item</li>
-                        </ul>
+                        <div class="dropdown_content">
+                    <a href="#">item</a>
+                    <div class="item_container">
+                        <a href="#" class="plus">item<i class="fa-solid fa-angle-right"></i></a>
+                        <div class="left">
+                            <a href="">item</a>
+                            <a href="">item</a>
+                            <a href="">item</a>
+                        </div>
+                    </div>
+                    <a href="#">item</a>
+                </div> 
                     </span>
                 <span>
                     <a href="#" class="pulsante">Inizia</a>
@@ -326,51 +359,56 @@
             <div>
                 <h3>Dropbox</h3>
                 <div>
-                    Applicazione desktop <br>
-                    Perchè Dropbox <br>
-                    Piani <br>
-                    Sicurezza <br>
-                    Funzioni
+                    <a href=""> Applicazione desktop <br></a>
+                    <a href=""> Perchè Dropbox <br></a>
+                    <a href="">Piani <br></a>
+                    <a href="">Sicurezza <br></a>
+                    <a href="">Funzioni</a>
+                    
                 </div>
             </div>
             <div>
                 <h3>Prodotti</h3>
                 <div>
-                    Applicazione desktop <br>
-                    Perchè Dropbox <br>
-                    Piani <br>
-                    Sicurezza <br>
-                    Funzioni
+                    <a href=""> Applicazione desktop <br></a>
+                    <a href=""> Perchè Dropbox <br></a>
+                    <a href="">Piani <br></a>
+                    <a href="">Sicurezza <br></a>
+                    <a href="">Funzioni</a>
+                    
                 </div>
             </div>
             <div>
                 <h3>Azienda</h3>
                 <div>
-                    Applicazione desktop <br>
-                    Perchè Dropbox <br>
-                    Piani <br>
-                    Sicurezza <br>
-                    Funzioni
+                    <a href=""> Applicazione desktop <br></a>
+                    <a href=""> Perchè Dropbox <br></a>
+                    <a href="">Piani <br></a>
+                    <a href="">Sicurezza <br></a>
+                    <a href="">Funzioni</a>
+                    
                 </div>
             </div>
             <div>
                 <h3>Supporto</h3>
                 <div>
-                    Applicazione desktop <br>
-                    Perchè Dropbox <br>
-                    Piani <br>
-                    Sicurezza <br>
-                    Funzioni
+                    <a href=""> Applicazione desktop <br></a>
+                    <a href=""> Perchè Dropbox <br></a>
+                    <a href="">Piani <br></a>
+                    <a href="">Sicurezza <br></a>
+                    <a href="">Funzioni</a>
+                    
                 </div>
             </div>
             <div>
                 <h3>Community</h3>
                 <div>
-                    Applicazione desktop <br>
-                    Perchè Dropbox <br>
-                    Piani <br>
-                    Sicurezza <br>
-                    Funzioni
+                    <a href=""> Applicazione desktop <br></a>
+                    <a href=""> Perchè Dropbox <br></a>
+                    <a href="">Piani <br></a>
+                    <a href="">Sicurezza <br></a>
+                    <a href="">Funzioni</a>
+                    
                 </div>
             </div>
         </div>
